@@ -13,7 +13,7 @@
 
 #include "driver/ledc.h"
 
-#define USE_SERIAL2_FOR_OLS 1 // If 1, UART2 = OLS and UART0=Debug
+#define USE_SERIAL2_FOR_OLS 0 // If 1, UART2 = OLS and UART0=Debug
 
 #define ALLOW_ZERO_RLE 0
 
@@ -45,9 +45,9 @@
 #else
 
 #define Serial_Debug_Port Serial2
-#define Serial_Debug_Port_Baud 921600
+#define Serial_Debug_Port_Baud 115200
 #define OLS_Port Serial
-#define OLS_Port_Baud 921600
+#define OLS_Port_Baud 115200
 
 #endif
 
